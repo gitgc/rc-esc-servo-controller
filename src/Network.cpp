@@ -1,9 +1,8 @@
 #include <Network.h>
 
-Network::Network(const char* ssid, const char* password, int port) {
+Network::Network(const char* ssid, const char* password) {
     this->ssid = ssid;
     this->password = password;
-    this->port = port;
 }
 
 Network::~Network() { }

@@ -7,14 +7,13 @@
 class Network
 {
 	public:
-		Network(const char* ssid, const char* password, int port);
+		Network(const char* ssid, const char* password);
 		~Network();
         void connectToWiFi();
 
 	private:
 		const char* ssid;
         const char* password;
-        int port;
 };
 
 #endif // NETWORK_LIBRARY_H
