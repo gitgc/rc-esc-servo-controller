@@ -1,13 +1,17 @@
 #include <Network.h>
 
-Network::Network(const char* ssid, const char* password) {
+Network::Network(const char* ssid, const char* password) 
+{
     this->ssid = ssid;
     this->password = password;
 }
 
-Network::~Network() { }
+Network::~Network() 
+{ 
+}
 
-void Network::connectToWiFi() {
+void Network::connectToWiFi() 
+{
     Serial.println("Connecting to WiFi...");
     WiFi.begin(this->ssid, this->password);
     int wifiStatus = WiFi.waitForConnectResult(10000);
