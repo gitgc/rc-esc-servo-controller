@@ -39,7 +39,7 @@ void setup()
 
     Serial.println("Starting RC Steering Controller...");
     pinMode(STEERING_PIN, OUTPUT);
-    //steering.arm();
+    steering.arm();
     Serial.println("Steering armed.");
 
     pinMode(LED_BUILTIN_PIN, OUTPUT);
