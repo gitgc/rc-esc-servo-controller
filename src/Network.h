@@ -6,14 +6,14 @@
 
 class Network
 {
-	public:
-		Network(const char* ssid, const char* password);
-		~Network();
+    public:
+        Network(const char* ssid, const char* password);
+        ~Network();
         void connectToWiFi();
 
-	private:
-		const char* ssid;
+    private:
+        const char* ssid;
         const char* password;
 };
 
-#endif // NETWORK_LIBRARY_H
+#endif
