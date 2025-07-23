@@ -1,4 +1,4 @@
-#include <network.h>
+#include <Network.h>
 
 // Network class constructor
 Network::Network(const char* ssid, const char* password, int port) {
